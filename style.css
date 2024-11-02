@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
+    font-weight: 600;
 }
 
 body {
@@ -29,6 +30,13 @@ body::before {
     backdrop-filter: blur(15px);
 }
 
+/* Utilities */
+.regular-txt {
+    font-weight: 400;
+}
+
+/* Utilities end */
+
 .main-container {
     /* border: solid; */
     width: 300px;
@@ -44,6 +52,7 @@ body::before {
 /* Input container */
 .input-container {
     position: relative;
+    margin-bottom: 25px;
 }
 
 .city-input {
@@ -75,4 +84,105 @@ body::before {
     display: flex;
     border: none;
     cursor: pointer;
+}
+/* Weather info */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.location-date-container {
+    /* border: solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    /* border: solid green; */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.fa-location-dot {
+    font-size: 25px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+
+.weather-summary-container {
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-summary-container img {
+    width: 120px;
+    height: 120px;
+}
+
+.weather-summary-info {
+    text-align: end;
+}
+
+.weather-conditions-container {
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.condition-item {
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.condition-item i {
+    font-size: 30px;
+}
+
+.forecast-items-container {
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+
+.forecast-items-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.15);
+    border-radius: 99px;
+}
+
+.forecast-item {
+    min-width: 70px;
+    background: rgb(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+
+.forecast-item:hover {
+    background: rgb(255, 255, 255, 0.15);
+}
+
+.forecast-item-img {
+    width: 35px;
+    height: 35px;
 }
