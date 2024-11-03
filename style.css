@@ -157,7 +157,7 @@ body::before {
 }
 
 .forecast-items-container::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0, 0.1);
+    /* background: rgb(0, 0, 0, 0.1); */
     border-radius: 99px;
 }
 
